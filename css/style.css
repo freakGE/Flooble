@@ -197,6 +197,7 @@ span {
           align-items: stretch;
   -ms-flex-line-pack: end;
       align-content: flex-end;
+  margin-right: 40px;
 }
 
 .search input {
@@ -429,15 +430,19 @@ span {
     padding-bottom: 2rem;
   }
   .mobile .main .search {
-    width: 60vh;
-    padding-right: 3rem;
+    width: 50vh;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .mobile .main .search {
+    width: 40vh;
   }
 }
 
 @media screen and (max-width: 550px) {
   .mobile .main .search {
-    width: 30vh;
-    padding-right: 3rem;
+    width: 40vh;
   }
   .mobile .main .search-cont {
     width: 100%;
@@ -466,6 +471,18 @@ span {
   }
   .mobile .main .search-cont .search-item button {
     margin: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .mobile .main .search {
+    width: 35vh;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .mobile .main .search {
+    width: 30vh;
   }
 }
 
@@ -531,6 +548,12 @@ span {
   }
   .footer .footer-cont .footer-item {
     padding: 0.5em;
+  }
+}
+
+@media screen and (max-width: 315px) {
+  .mobile .main .search {
+    width: 25vh;
   }
 }
 /*# sourceMappingURL=style.css.map */

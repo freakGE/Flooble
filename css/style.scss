@@ -164,8 +164,11 @@ span {
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
-  align-items: stretch;
+  align-items: stretch; //stretch
   align-content: flex-end;
+  // padding-right: 40px;
+  // background-color: red;
+  margin-right: 40px;
   input {
     border-radius: 20px;
     height: 100%;
@@ -383,8 +386,17 @@ span {
       }
       .search {
         // background-color: purple;
-        width: 60vh;
-        padding-right: 3rem;
+        width: 50vh;
+        // padding-right: 3rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .mobile {
+    .main {
+      .search {
+        width: 40vh;
       }
     }
   }
@@ -394,8 +406,8 @@ span {
     .main {
       .search {
         // background-color: purple;
-        width: 30vh;
-        padding-right: 3rem;
+        width: 40vh;
+        // padding-right: 3rem;
       }
       .search-cont {
         width: 100%;
@@ -416,6 +428,24 @@ span {
             margin: 0;
           }
         }
+      }
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .mobile {
+    .main {
+      .search {
+        width: 35vh;
+      }
+    }
+  }
+}
+@media screen and (max-width: 450px) {
+  .mobile {
+    .main {
+      .search {
+        width: 30vh;
       }
     }
   }
@@ -461,6 +491,15 @@ span {
       align-content: stretch;
       .footer-item {
         padding: 0.5em;
+      }
+    }
+  }
+}
+@media screen and (max-width: 315px) {
+  .mobile {
+    .main {
+      .search {
+        width: 25vh;
       }
     }
   }
