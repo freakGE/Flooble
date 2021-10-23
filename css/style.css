@@ -1,3 +1,45 @@
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.3;
+  }
+  60% {
+    opacity: 0.5;
+  }
+  80% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.3;
+  }
+  60% {
+    opacity: 0.5;
+  }
+  80% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 html,
 body {
   color: #ffffff;
@@ -338,6 +380,10 @@ span {
     width: 2.4rem;
   }
   .mobile .header.show {
+    -webkit-animation-name: fadeIn;
+    -webkit-animation-duration: 0.7s;
+    animation-name: fadeIn;
+    animation-duration: 0.7s;
     padding: 0;
     margin-top: 0.5rem;
     top: 0.5rem;
