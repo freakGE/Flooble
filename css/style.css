@@ -197,7 +197,7 @@ span {
           align-items: stretch;
   -ms-flex-line-pack: end;
       align-content: flex-end;
-  margin-right: 40px;
+  margin-right: 80px;
 }
 
 .search input {
@@ -218,6 +218,7 @@ span {
 
 .search input[type="text"] {
   padding-left: 40px;
+  padding-right: 40px;
 }
 
 .search {
@@ -226,7 +227,7 @@ span {
 
 .fa-search {
   position: absolute;
-  left: 0;
+  left: 0.5rem;
   top: -1px;
   padding: 9px 8px;
   color: #282c34;
@@ -240,7 +241,7 @@ span {
 
 .fa-microphone {
   position: absolute;
-  right: -2rem;
+  right: -4rem;
   top: 8px;
   color: #282c34;
 }
@@ -551,9 +552,15 @@ span {
   }
 }
 
-@media screen and (max-width: 315px) {
+@media screen and (max-width: 350px) {
   .mobile .main .search {
     width: 25vh;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .mobile .main .search {
+    width: 20vh;
   }
 }
 /*# sourceMappingURL=style.css.map */

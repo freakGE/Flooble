@@ -168,7 +168,7 @@ span {
   align-content: flex-end;
   // padding-right: 40px;
   // background-color: red;
-  margin-right: 40px;
+  margin-right: 40px + 40px; //aq
   input {
     border-radius: 20px;
     height: 100%;
@@ -186,6 +186,7 @@ span {
 }
 .search input[type="text"] {
   padding-left: 40px;
+  padding-right: 40px; //aq
 }
 .search {
   position: relative;
@@ -193,7 +194,7 @@ span {
 }
 .fa-search {
   position: absolute;
-  left: 0;
+  left: 0.5rem;
   top: -1px;
   padding: 9px 8px;
   color: #282c34;
@@ -206,7 +207,8 @@ span {
 }
 .fa-microphone {
   position: absolute;
-  right: -2rem;
+  // right: calc(-2rem - 35px); //aq
+  right: -4rem;
   top: 8px;
   // padding-right: ;
   color: #282c34;
@@ -495,11 +497,20 @@ span {
     }
   }
 }
-@media screen and (max-width: 315px) {
+@media screen and (max-width: 350px) {
   .mobile {
     .main {
       .search {
         width: 25vh;
+      }
+    }
+  }
+}
+@media screen and (max-width: 300px) {
+  .mobile {
+    .main {
+      .search {
+        width: 20vh;
       }
     }
   }
