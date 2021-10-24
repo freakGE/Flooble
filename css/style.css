@@ -563,4 +563,34 @@ span {
     width: 20vh;
   }
 }
+
+@media screen and (max-height: 630px) {
+  .mobile .name {
+    margin-top: 2rem;
+  }
+  .mobile .search-cont {
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  .mobile .name {
+    margin-top: 3rem;
+  }
+}
+
+@media screen and (max-height: 580px) {
+  .mobile .name {
+    margin-top: 4rem;
+  }
+}
+
+@media screen and (max-height: 500px) {
+  .mobile .name {
+    margin-top: 4.5rem;
+  }
+  .mobile .search-cont {
+    margin-bottom: 2rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */
