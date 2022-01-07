@@ -67,9 +67,11 @@ body {
 
 .head {
   background-color: $background-main-clr;
+  height: 93vh;
 }
 .footer {
   background-color: $background-footer-clr;
+  // height: 7vh;
 }
 .left {
   display: flex;
@@ -554,3 +556,4 @@ span {
     }
   }
 }
+
